@@ -1,18 +1,114 @@
-#loginForm {
-    width: 350px;
-    border: 2px solid black;
-    margin: auto;
+.header{
+    height: 57px;
+    width: 100%;
+    background-color: rgb(17, 17, 37);
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap:60%;
+}
+.navigation{
+    height: 45px;
+    width: 100%;
+    background-color: rgb(76, 76, 81);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10%;
     
 }
-
-#registerFrom{
-    width: 350px;
-    border:  2px solid black;
-    margin: auto;
+.bannerImg{
+    height:350px;
+    width:100%;
+}
+.mainSection{
+    height:400px;
+    width:100%;
+    background-color: rgb(174, 170, 170);
+}
+.footer{
+    height:350px;
+    width:100%;
+    background-color: #3b2929;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2%;
+}
+.box{
+    height:300px;
+    width:30%;
+    /* border:2px solid white; */
+}
+.footerHeading{
+    color:white;
 }
 
-#navBar{
-    background-color: black;
-    height: 80px;
-    flex: auto;
+.footerLink{
+    color:white;
+    text-decoration: none;
+}
+
+.left{
+    border: 2px solid red;
+    height:55px;
+    width: 15%;
+    /* gap:10px; */
+    display: flex;
+    align-items: center;
+
+}
+.right{
+    border: 2px solid blue;
+    height:55px;
+    width: 25%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+#box21{
+    height: 45px;
+    width: 100%;
+    border-radius: 50px 50px 50px 50px;
+    color:white;
+    font-size: medium;
+    font-weight: bold;
+}
+#box22{
+    width: 30%;
+    height: 45px;
+    border-radius: 10%;
+    color:white;
+    font-size: medium;
+    font-weight: bold;
+}
+.logo{
+    height:50px;
+}
+.link{
+    color:white;
+    text-decoration: none;
+}
+.mainSection{
+    height:400px;
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8c3c3;
+}
+.section{
+    height: 380px;
+    width: 100%;
+    /* border:2px solid yellow; */
+}
+
+#LoginForm{
+    width:50%;
+    border:3px solid black;
+    margin: 50px auto;
+    /* horizontally center  */
 }
