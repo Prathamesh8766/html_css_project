@@ -1,24 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <title>Resister page</title>
-    <link rel="stylesheet" href="./style.css">
-</html>
-<body>
-    <div id="LoginForm" >
-        <from>
-            <label for="username">Login</label>
-            <input type="text" id="username" name="username" placeholder="Enter user name">
-            <br>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter password">
-            <br>
-            <label for="mobile">Mobile</label>
-            <input type="password" id="password" name="password" placeholder="Enter password">
-            <br>
-            <button type="submit">Register</button>
-            <br>
-        </form>
-        <p>already have account:<a href="./login.html">Login here</a></p>
+<html lang="en">
+  <head>
+    <title>Register Page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="LoginForm">
+      <form>
+        
+        <label for="username">Username <sup style="color: red;">*</sup></label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter user name"
+          required
+          
+        />
+        <br />
+
+        <label for="password">Password <sup style="color: red;">*</sup></label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          placeholder="Enter password"
+          minlength="5"
+          max="10"
+          pattern="[A-Z,a-z]{3,5}"
+        />
+        <br />
+
+        <label for="mobile">Mobile</label>
+        <select name="c_code" id="code">
+          <option value="+91">+91</option>
+          <option value="+93">+93</option>
+          <option value="+94">+94</option>
+        </select>
+        <input
+          type="tel"
+          id="mobile"
+          name="mobile"
+          placeholder="Enter mobile No."
+        />
+        <br />
+
+        <label for="gender">Gender</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <br />
+
+        <button type="submit">Register</button>
+        &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+        <button type="reset">Cancel</button>
+        <br />
       
+      </form>
+
+      <p>Already have an account? <a href="./login.html">Login here</a></p>
     </div>
-</body>
+  </body>
+</html>
